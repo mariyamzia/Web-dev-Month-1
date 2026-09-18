@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .boxes :first-child {
+            background-color: red;
+        }
+
+        .boxes :nth-child(2) {
+            background-color: aqua;
+        }
+
+        */ .boxes :nth-child(3) {
+            background-color: burlywood;
+        }
+
+        */ .boxes :last-child {
+            background-color: blue;
+        }
+
+        */ .boxes :nth-last-child(1) {
+            background-color: aqua;
+        }
+
+        .boxes :nth-last-of-type(1) {
+            background-color: red;
+        }
+
+        .box::first-letter {
+            color: red;
+        }
+
+        .box::first-line {
+            background-color: rgb(225, 225, 235);
+        }
+
+        .box::selection {
+            background-color: rgb(12, 11, 11);
+            color: white;
+        }
+
+        .boxes * {
+            color: red;
+            border: 1px solid black;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding: 20px;
+            margin: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 30px;
+            margin-right: 100px;
+        }
+
+        .box,
+        p,
+        a,
+        [me-qw="primary"] {
+            padding: 50px;
+        }
+
+        .box:nth-child(even) {
+            background-color: rgb(38, 46, 46);
+
+        }
+
+        */ .box:nth-child(odd) {
+            background-color: magenta;
+            color: white;
+        }
+
+        .boxes::before {
+            content: "Mariyam is a web developer.";
+            color: blue;
+        }
+
+        .boxes::after {
+            content: 'She is learning web development.';
+            color: red;
+        }
+
+        input::placeholder {
+            color: rgb(75, 5, 5);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div me-qw="primary" class="box">I am the first box</div>
+        <div class="box">I am the second box</div>
+        <div class="box">I am the third box</div>
+        <input type="text" placeholder="Enter your name here...">
+    </div>
+</body>
+
+</html>

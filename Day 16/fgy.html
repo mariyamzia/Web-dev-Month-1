@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Card Component</title>
+    <style>
+        /* Global Reset and Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #6c857c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* 1. The Card Container */
+        .card {
+            background-color: #e2cccc;
+            width: 320px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* Clips image corners to match card border-radius */
+        }
+
+        /* Hover Effect for Interactivity */
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 2. Card Header / Image */
+        .card-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            /* Ensures the image crops cleanly without distortion */
+            display: block;
+        }
+
+        /* 3. Card Content Wrapper */
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            margin: 0 0 10px 0;
+            font-size: 1.4rem;
+            color: #333333;
+        }
+
+        .card-description {
+            margin: 0 0 20px 0;
+            font-size: 0.95rem;
+            color: #3b1b1b;
+            line-height: 1.5;
+        }
+
+        /* 4. Action Button */
+        .card-button {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #053a73;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-align: center;
+            transition: background-color 0.2s;
+        }
+
+        .card-button:hover {
+            background-color: #0f78e1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Semantic HTML Card Structure -->
+    <article class="card">
+        <!-- Optional Cover Image -->
+        <img src="https://picsum.photos" alt="Card Cover" class="card-image">
+
+        <!-- Text Content Area -->
+        <div class="card-content">
+            <h2 class="card-title">Card Heading</h2>
+            <p class="card-description">
+                This is a quick summary or description sentence. It explains what this card is about in a brief,
+                readable chunk.
+            </p>
+            <!-- Call to Action Link/Button -->
+            <a href="#" class="card-button">Read More</a>
+        </div>
+    </article>
+
+</body>
+
+</html>

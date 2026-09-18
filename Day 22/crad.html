@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card designing</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        h1 {
+            color: midnightblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            height: 450px;
+            width: 300px;
+            background-color: beige;
+            margin: 60px;
+            padding: 15px; /* Slightly increased for better spacing */
+            box-shadow: 7px 10px 5px 2px rgb(7 1 1 / 15%);
+            border: 2px solid black;
+            border-radius: 20px;
+            
+            /* 🌟 FIX 1: Turn the card into a Flexbox container */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centers all text, tags, and the button horizontally */
+            box-sizing: border-box; /* Prevents padding from breaking the 450px height */
+        }
+
+        /* 🌟 FIX 2: Made width 100% so it fits beautifully inside the card's padding */
+        .container img {
+            width: 100%; 
+            height: 150px;
+            object-fit: cover;
+            border-radius: 12px; /* Fits perfectly inside the nested container */
+        }
+
+        /* Wrapper for tags so they sit nicely side-by-side */
+        .tag-container {
+            margin-top: 10px;
+        }
+
+        .container span {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 2px solid black;
+            margin: 0 5px; /* Side margins only */
+            padding: 2px 8px; /* Added inner padding to tags */
+            border-radius: 5px;
+            background-color: red;
+            color: white;
+            display: inline-block;
+        }
+
+        .container h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 15px 0 5px 0; /* Reduced to leave room for the button */
+            text-align: center;
+        }
+
+        .container p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Clean centered text align */
+            font-size: 14px;
+        }
+
+        /* 🌟 FIX 3: Cleaned up button styles */
+        .container button {
+             margin-top: auto; /* Pushes the button perfectly to the bottom */   
+             padding: 10px 20px;
+             border: 2px solid black;
+             border-radius: 5px;
+             background-color: midnightblue;
+             color: white;
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             /* cursor: pointer; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My first card🤡</h1>
+    <div class="container">
+        <!-- Removed extra wrapping div around img for cleaner flex flow -->
+        <img src="pasta.jpg" alt="Pasta">
+        
+        <!-- Grouped spans so they stay together on one line -->
+        <div class="tag-container">
+            <span>Pasta</span>
+            <span>Pizza</span>
+        </div>
+
+        <h2>Pasta Benefits:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sint fugit sapiente! Tenetur esse
+            consectetur explicabo? Alias veniam enim beatae!</p>
+            
+        <button>Read more</button>
+    </div>
+</body>
+
+</html>

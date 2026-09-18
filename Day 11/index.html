@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector */
+        div {
+            background-color: red;
+        }
+
+        .one {
+            background-color: brown;
+        }
+
+        div>p {
+            color: blue;
+            background-color: red;
+        }
+
+        #one {
+            background-color: yellow;
+        }
+
+        div p {
+            color: blue;
+            background-color: red;
+        }
+
+        #one {
+            background-color: yellow;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        a:link {
+            color: aqua;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        a:hover {
+            background-color: brown;
+        }
+
+        p:first-child {
+            background-color: black;
+        }
+
+        * {
+
+            font-family: Arial;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div>
+        I am div
+    </div>
+    <div>
+        I am another div
+    </div> -->
+    <div class="one">
+        I am also a div
+        <article>
+            <p> I am a para inside a div</p>
+
+
+        </article>
+
+    </div>
+    <span id="one">
+        I am a span
+    </span>
+    <a href="https://www.facebook.com">Go to Facebook</a>
+    <a href="https://www.instagram.com">Go to Instagram</a>
+    <div class="one">
+        <p>I am one</p>
+        <p>I am two </p>
+    </div>
+</body>
+
+</html>

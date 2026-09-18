@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .contanier {
+            display: grid;
+            grid-template-columns: 200px 700px 500px;
+            grid-template-rows: 200px 300px 300px;
+            /* grid-auto-columns: 300px; */
+            gap: 10px;
+            height: 900px;
+            /* grid-auto-rows: 300px;
+            grid-auto-flow: row; */
+        }
+
+        .item {
+            /* background-color: rgb(148, 148, 241); */
+            /* height: 100px;
+            width: 100px; */
+            color: black;
+            text-align: center;
+            border-radius: 8px;
+            padding: 2em;
+            font-size: 2em;
+            border: 3px solid black;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contanier">
+        <div class="item">First box</div>
+        <div class="item">Second box</div>
+        <div class="item">Third box</div>
+        <div class="item">Forth box</div>
+        <div class="item">Fifth box</div>
+        <div class="item">Sixth box</div>
+        <div class="item">Seventh box</div>
+        <div class="item">Eighth box</div>
+        <div class="item">Ninth box</div>
+    </div>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 200px 200px;
+            gap: 10px;
+            grid-template-areas: 
+            "box1 box2 box2 box3"
+            "";
+        }
+        .box-1{
+            grid-area: box1;
+
+        }
+        .box-2{
+            grid-area: box2;
+        }
+        .box-3{
+            grid-area: box3;
+        }
+        .box-4{
+            grid-area: box4;
+        }
+        .box-5{
+            grid-area: box5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+        <div class="box-4">4</div>
+        <div class="box-5">5</div>
+    </div>
+</body>
+</html>

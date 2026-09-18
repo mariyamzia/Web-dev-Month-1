@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        img{
+            float:left;
+        }
+        .cards{
+            border: 2px solid black;
+            display:flow-root;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: yellow;
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img width="200" height="200" src="https://hips.hearstapps.com/hmg-prod/images/gardenia-royalty-free-image-1580854928.jpg?crop=1.00xw:0.796xh;0,0.0851xh" alt="">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempore, voluptatibus blanditiis omnis aperiam vitae eos? Quod, optio explicabo, voluptas minus totam laudantium aut et asperiores commodi ipsum esse recusandae neque tenetur repellat cum ducimus, ullam nulla quos? Nesciunt dolorem saepe aliquid ea maiores dolor!</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde fugit alias, beatae praesentium culpa ab optio illo ipsam necessitatibus laborum ratione, accusantium porro saepe quae atque sint. Optio molestiae magni obcaecati fuga rerum expedita quos dolores cupiditate. Reprehenderit id rerum cumque doloremque! Hic officia alias qui, quae amet reprehenderit molestiae vero, voluptas blanditiis quidem explicabo eligendi laudantium tempore fugiat quos expedita at laboriosam? Facere fuga aliquam voluptatibus explicabo cupiditate dolorum quos distinctio amet omnis sunt nobis dignissimos, nostrum molestiae minima architecto a laborum hic maxime aperiam. Doloribus ad beatae minima quas eos veritatis, temporibus ipsam nobis, dignissimos, distinctio repellat ipsum a unde dolorum! Odio ad non corporis optio accusantium ipsam illo nulla sint in necessitatibus neque, cumque saepe nihil quis. Deleniti dolor suscipit saepe aperiam a aspernatur molestias esse incidunt accusamus sed, maxime, libero architecto maiores harum tempora adipisci ipsum ad inventore et iure, minima cupiditate porro consectetur! Doloribus incidunt animi aliquid adipisci debitis eos praesentium consequatur, unde neque soluta ab. Rerum, reprehenderit atque molestiae eveniet, deserunt harum quae aliquid, delectus recusandae maxime quia aspernatur repellat voluptatum nulla eaque esse corrupti voluptatibus molestias exercitationem iure eos nihil. Dolore dolorem ab, nostrum, quam omnis, cupiditate at odio sit nemo corrupti vitae.</div>
+        <div class="card">Card3</div>
+    </div>
+</body>
+</html>

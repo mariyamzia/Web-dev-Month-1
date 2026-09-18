@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 200px 200px; */
+            grid-auto-columns: 200px;
+            grid-auto-rows: auto;
+            gap: 10px;
+            grid-template-areas:
+                "box1 box1 box2 box3"
+                "box1 box1 box4 box5";
+        }
+
+        /* @media(max-width: 56em){
+            .container{
+            display: grid;
+            /* grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px; */
+        /* grid-auto-columns: 200px;
+             grid-auto-rows: 200px;
+            gap: 10px;
+            grid-template-areas: 
+            "box1 box1 box2"
+            "box1 box1 box3"
+            "box4 box5 box5"; */
+        .box-1 {
+            grid-area: box1;
+
+        }
+
+        .box-2 {
+            grid-area: box2;
+        }
+
+        .box-3 {
+            grid-area: box3;
+        }
+
+        .box-4 {
+            grid-area: box4;
+        }
+
+        .box-5 {
+            grid-area: box5;
+        }
+
+        .box-6 {
+            grid-area: box6;
+        }
+
+        .box-7 {
+            grid-area: box7;
+        }
+
+        .box-8 {
+            grid-area: box8;
+        }
+
+        .box {
+            background-color: rgb(246, 98, 98);
+            /* border: 2px solid black; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box-1"></div>
+        <div class="box box-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem eligendi quia
+            odit doloremque, accusamus saepe iure expedita, fuga accusantium blanditiis iusto. Placeat hic neque numquam
+            aliquam eos reiciendis atque quia facere vel, sit, vitae asperiores reprehenderit veniam nemo adipisci.
+            Perspiciatis aperiam quidem, voluptatem asperiores maxime harum hic ut reiciendis
+            facere?hfhurierhiwurhjdhkmajikdhfhhghgiofoioi0rirjijgjgijgg
+            jijiuirtrjjgkjgofjgfjgkfjgkknmnfjgiruitijnvvndkfjjfijaw34835r</div>
+        <div class="box box-3"></div>
+        <div class="box box-4"></div>
+        <div class="box box-5"></div>
+        <div class="box box-6"></div>
+        <div class="box box-7"></div>
+        <div class="box box-8"></div>
+    </div>
+</body>
+
+</html>
